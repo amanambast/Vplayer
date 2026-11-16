@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b14;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111827;
+}
+
+.logo {
+    color: #00d9ff;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 15px;
+    background: #202b40;
+    color: white;
+    margin: 3px;
+}
+
+.search-box {
+    padding: 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #34445d;
+    background: #151e2e;
+    color: white;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    overflow-x: auto;
+    background: #111827;
+    padding: 10px;
+}
+
+.tab {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.tab.active {
+    background: #00a9d6;
+}
+
+main {
+    padding: 18px;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+h3 {
+    margin: 20px 0 10px;
+}
+
+p {
+    color: #aab5c7;
+    margin-bottom: 15px;
+}
+
+.primary {
+    background: #007bff;
+    padding: 14px 20px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.video-list {
+    margin-top: 15px;
+}
+
+.video-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #151e2e;
+    padding: 13px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.video-name {
+    flex: 1;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+.video-card button {
+    padding: 9px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background: #05070d;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.modal video {
+    width: 100%;
+    max-height: 65vh;
+    margin-top: 55px;
+    background: black;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #e63946;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    background: #202b40;
+    color: white;
+    border: none;
+}
+
+#fullscreen,
+#subtitleBtn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #8190a8;
+}
