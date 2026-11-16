@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMAN PLAYER PRO MAX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">▶ AMAN PLAYER</div>
+    <button id="themeBtn">☀</button>
+</header>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search your videos...">
+</div>
+
+<nav>
+    <button class="tab active" data-tab="home">Home</button>
+    <button class="tab" data-tab="videos">Videos</button>
+    <button class="tab" data-tab="history">History</button>
+    <button class="tab" data-tab="favorites">Favorites</button>
+</nav>
+
+<main>
+
+<section id="home" class="page active">
+    <h2>Welcome to AMAN PLAYER</h2>
+    <p>Your Personal Video Player</p>
+
+    <button class="primary" id="selectBtn">＋ Select Videos</button>
+
+    <h3>Recently Played</h3>
+    <div id="recentList" class="video-list"></div>
+</section>
+
+<section id="videos" class="page">
+    <h2>All Videos</h2>
+    <button class="primary" id="selectBtn2">＋ Add Videos</button>
+    <div id="videoList" class="video-list"></div>
+</section>
+
+<section id="history" class="page">
+    <h2>Watch History</h2>
+    <div id="historyList" class="video-list"></div>
+</section>
+
+<section id="favorites" class="page">
+    <h2>My Favorites ❤️</h2>
+    <div id="favoriteList" class="video-list"></div>
+</section>
+
+<input type="file" id="fileInput"
+accept="video/*" multiple hidden>
+
+<div id="playerModal" class="modal">
+    <button id="closePlayer" class="close">✕</button>
+
+    <video id="player" controls playsinline></video>
+
+    <div class="controls">
+        <button id="backward">⏪ 10s</button>
+        <button id="forward">10s ⏩</button>
+        <select id="speed">
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+        </select>
+    </div>
+
+    <button id="fullscreen">⛶ Full Screen</button>
+    <button id="subtitleBtn">Add Subtitle</button>
+    <input type="file" id="subtitleInput"
+    accept=".vtt" hidden>
+</div>
+
+<script src="script.js"></script>
+</main>
+
+<footer>video player © 2026</footer>
+
+</body>
+</html>
